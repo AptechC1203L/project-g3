@@ -4,11 +4,11 @@ project-g3
 Project cuối kỳ 1 của nhóm 3
 
 Project có sử dụng một số công nghệ sau:
-- Jekyll - template engine
-- Bootstrap - framework lập trình giao diện web
 
-Jekyll
-======
+- [Jekyll](#jekyll) - template engine
+- [Bootstrap](#bootstrap) - framework lập trình giao diện web
+
+<h2 id="jekyll">Jekyll</h2>
 
 [Jekyll](https://github.com/mojombo/Jekyll) là một hệ thống tạo site dựa theo template. Lập trình viên tạo
 các template trong thư mục `_layouts` (ví dụ như default.html)
@@ -40,6 +40,83 @@ vừa tạo vào trong thư mục `_site` và tạo một webserver ở địa c
 
 Ngoài ra, tất cả các file trong thư mục _posts có dạng `năm-tháng-ngày-tên-post.md` đều
 được convert tự động thành các bài viết như một blog `_site/năm/tháng/ngày/tên-post.html`
+
+Đây là một ví dụ thực tế hơn:
+
+    default.html:
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>{{ page.title }}</title>
+        <meta name="description" content="{{ page.description }}"/>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+      </head>
+      <body>
+          <header>
+            Header
+          </header>
+          
+          <article>
+            {{ content }}
+          </article>
+          
+          <footer>
+            Footer
+          </footer>
+
+        
+        <!-- Scripts -->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+      </body>
+    </html>
+
+
+    index.html:
+        
+    ---
+    layout: default
+    title: "iPhone 6"
+    description: "iPhone 6 is the lastest iteration in our world-renowned iPhone
+    product lines."
+    ---
+
+    <h1>Hello, world!</h1>
+
+sẽ tạo ra kết quả như thế này:
+
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>iPhone 6</title>
+        <meta name="description" content="iPhone 6 is the lastest iteration in our world-renowned iPhone product lines."/>
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+      </head>
+      <body>
+          <header>
+            Header
+          </header>
+          
+          <article>
+            <h1>Hello, world!</h1>
+
+          </article>
+          
+          <footer>
+            Footer
+          </footer>
+
+        
+        <!-- Scripts -->
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+      </body>
+    </html>
+
 
 Project sử dụng tính năng Pages của Github để host site. Github Pages sử dụng
 Jekyll làm backend nên chỉ cần push một commit lên nhánh gh-pages là Github sẽ
@@ -73,8 +150,7 @@ Các biến liquid có thể tìm hiểu tại [đây](https://github.com/mojomb
 Jekyll còn có một số [extension cho liquid](https://github.com/mojombo/Jekyll/wiki/liquid-extensions)
 giúp đỡ nhiều cho việc tạo template.
 
-Bootstrap
-========
+<h2 id="bootstrap">Bootstrap</h2>
 
 [Bootstrap](http://twitter.github.com/bootstrap/) là một tập hợp các file css, js
 và hình ảnh được thiết kế sẵn để giúp tăng tốc quá trình build giao diện cho một
