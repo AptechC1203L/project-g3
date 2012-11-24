@@ -1,11 +1,19 @@
 ﻿body {
 	font-family: Lucida Grande, Segoe UI, Open Sans, san-serif;
 	font-size: 14px;
+	background-color: #EEE;
 }
 /*Xóa dấu ở list */
 
 li {
 	list-style: none; 
+}
+.container {
+	padding: 20px 50px;
+	border-right: 1px solid #DDD;
+	border-left: 1px solid #DDD;
+	background-color: white;
+	box-shadow: 0px 0px 10px #CCC;
 }
 
 a:hover {
@@ -38,5 +46,6 @@ a:hover {
 }
 
 .row .inner {
-	width: 925px;
+	width: 880px;
+	margin: 0 auto;
 }
