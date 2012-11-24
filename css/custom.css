@@ -23,6 +23,7 @@ a:hover {
 #myCarousel {
 	width: 870px;
 	margin: 0 auto;
+	clear: both;
 }
 
 .span2 > h3 {
@@ -48,4 +49,57 @@ a:hover {
 .row .inner {
 	width: 880px;
 	margin: 0 auto;
+}
+
+.carousel-control {
+	top: 50%;
+	font-size: 120px;
+	color: #888;
+	left: -60px;
+	background: transparent;
+}
+.carousel-control.right {
+	right: -60px;
+}
+.carousel-control:hover {
+	color: #444;
+}
+
+#product-header {
+	float: left;
+	width: 940px;
+	padding-bottom: 10px;
+}
+#product-header h2 {
+	float: left;
+	margin: 0;
+}
+#product-header h2 a {
+	display: block;
+	width: 95px;
+	height: 29px;
+	text-indent: -9999px;
+	background: url(../img/apple/product_title.png);
+}
+#product-header ul  {
+	float: right;
+	margin: 0;
+}
+#product-header ul li {
+	display: inline;
+}
+#product-header ul li a {
+	line-height: 35px;
+	padding: 0px 10px;
+	font-size: 0.85em;
+}
+#product-header ul li.buy-now a {
+	display: inline-block;
+	padding: 0;
+	width: 72px;
+	height: 25px;
+	background: url(../img/apple/buynows.png) no-repeat;
+	text-indent: -9999px;
+	position: relative;
+	top: 5px;
 }
