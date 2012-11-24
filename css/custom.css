@@ -1,4 +1,42 @@
+﻿body {
+	font-family: Lucida Grande, Segoe UI, Open Sans, san-serif;
+	font-size: 14px;
+}
+/*Xóa dấu ở list */
+
+li {
+	list-style: none; 
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 #myCarousel {
 	width: 870px;
+	margin: 0 auto;
 }
-/*aoskdoaskdo*/
+
+.span2 > h3 {
+	font-size: 1.1em;
+	line-height: 20px;
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 10px;
+}
+.span2 > ul {
+	margin-left: 0px;
+	margin-top: 15px;
+}
+
+.navbar .brand {
+	text-indent: -9999px;
+	display: block;
+	width: 17px;
+	height: 22px;
+	background: url(/img/apple/logo.png) no-repeat 20px 10px transparent;
+	padding-bottom: 8px;
+}
+
+.row .inner {
+	width: 925px;
+}
