@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}"/>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+	<link href="css/custom.css" rel="stylesheet" media="screen"/>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="navbar">
+		  <div class="navbar-inner">
+			<a class="brand" href="#">Apple</a>
+			<ul class="nav">
+			  <li class="active"><a href="#">Home</a></li>
+			  <li><a href="#">Contact</a></li>
+			  <li><a href="#">Blog</a></li>
+			  <li><a href="#">About</a></li>
+			  <li><a href="#">FAQ</a></li>
+			</ul>
+		  </div>
+		</div>			
+      </header>
+      
+      <article>
+        {{ content }}
+      </article>
+      
+      <footer>
+          <div class="row">
+			<div class="inner">
+				<div class="span2">
+				  <h3>About iPhone</h3>
+				  <ul>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Design</a></li>
+					<li><a href="#">Build-in Apps</a></li>
+					<li><a href="#">From the AppStore</a></li>
+				  </ul>
+				</div>
+				<div class="span2 offset1">
+				  <h3>More iPhone</h3>
+				  <ul>
+					<li><a href="#">iPhone 4S Tech Specs</a></li>
+					<li><a href="#">iPhone 4 Tech Specs</a></li>
+					<li><a href="#">Tips and Tricks</a></li>
+				  </ul>
+				</div>
+				<div class="span2 offset1">
+				  <h3>iPhone in Business</h3>
+				  <ul>
+					<li><a href="#">Overview</a></li>
+					<li><a href="#">Apps</a></li>
+					<li><a href="#">iOS</a></li>
+					<li><a href="#">IT Center</a></li>
+					<li><a href="#">Get Started</a></li>
+				  </ul>
+				</div>
+				<div class="span2 offset1">
+				  <h3>Support</h3>
+				  <ul>
+					<li><a href="#">Where to buy iPhone</a></li>
+					<li><a href="#">Online Support</a></li>
+				  </ul>
+				</div>
+			</div>
+          </div>
+          <div class="span3">
+            <p>Copyright &copy; 2012, Apple Inc.</p>
+          </div>
+          <div class="span8">Right</div>
+      </footer>
+    </div>
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$('.carousel').carousel({
+		interval: 10000
+	});
+	</script>
+  </body>
+</html>
