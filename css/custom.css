@@ -103,13 +103,11 @@ footer .row .inner {
 	position: relative;
 	top: 5px;
 }
-<<<<<<< HEAD
 #product-header ul li.buy-now a:hover {
 	background-position: 0px -25px;
 }
 #product-header ul li.buy-now a:active {
 	background-position: 0px -50px;
-=======
 
 #product-type  {
 	padding-top: 20px;
@@ -226,5 +224,4 @@ img.flushleft {
 	margin-left: 20px;
 	z-index: 100;
 	display: block;
->>>>>>> index
 }
