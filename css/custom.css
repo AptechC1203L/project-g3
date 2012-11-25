@@ -103,3 +103,9 @@ a:hover {
 	position: relative;
 	top: 5px;
 }
+#product-header ul li.buy-now a:hover {
+	background-position: 0px -25px;
+}
+#product-header ul li.buy-now a:active {
+	background-position: 0px -50px;
+}
