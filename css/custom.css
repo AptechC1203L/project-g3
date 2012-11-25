@@ -26,16 +26,6 @@ a:hover {
 	clear: both;
 }
 
-.span2 > h3 {
-	font-size: 1.1em;
-	line-height: 20px;
-	border-bottom: 1px solid #DDD;
-	padding-bottom: 10px;
-}
-.span2 > ul {
-	margin-left: 0px;
-	margin-top: 15px;
-}
 
 /* Logo Apple ở Nav Menu */
 .navbar .brand {
@@ -47,12 +37,23 @@ a:hover {
 	padding-bottom: 8px;
 }
 
-
+footer {
+	padding-top: 20px;
+}
 footer .row .inner {
 	width: 880px;
 	margin: 0 auto;
 }
-
+footer .row h3 {
+	font-size: 0.9em;
+	color: #555;
+	margin: 0;
+	line-height: 20px;
+}
+footer .row ul {
+	margin: 0;
+	font-size: 0.8em;
+}
 /* Chỉnh sửa lại 2 cái arrow */
 .carousel-control {
 	top: 50%;
@@ -279,4 +280,52 @@ img.flushleft {
 	margin-left: 20px;
 	z-index: 100;
 	display: block;
+}
+
+#buystrip {
+	padding-top: 24px;
+}
+#buystrip .list {	
+	padding-bottom: 20px;
+}
+#buystrip .span3 {
+	text-align: center;
+}
+#buystrip .span3 .inner {	
+	height: 235px;
+	border-right: 1px solid #CCC;
+	padding-right: 20px;
+}
+#buystrip .span3:last-child .inner {	
+	border: none;
+}
+#buystrip .more {
+	display: block;
+	font-size: 1.15em;
+}
+#buystrip p {
+	font-size: 0.85em;
+	color: #888;
+}
+
+#buystrip .gradient {
+	padding-top: 20px;
+	background: url(../img/apple/overview_divider_down.jpg) no-repeat top center transparent;
+}
+#buystrip .gradient a {
+	display: block;
+	width: 520px;
+	margin: 0 auto;	
+	line-height: 30px;
+}
+#buystrip .gradient p {
+	padding-left: 10px;
+}
+#buystrip .gradient img, #buystrip .gradient p, #buystrip .gradient .more {
+	float: left;
+}
+#buystrip .gradient .more {
+	font-size: 0.85em;
+	padding-left: 10px;
+	
 }
