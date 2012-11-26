@@ -80,9 +80,7 @@
 	$('.carousel').carousel({
 		interval: 10000
 	});
-	$('.navbar li:not(.active)').on('hover', function() {
-        $(this).toggleClass('active');
-	});
+	
 	$('a[href="#"]').on('click', function(e) {
 		e.preventDefault();
 	});
@@ -91,6 +89,11 @@
 		$('li.home').removeClass('active');
 		$('li.blog').addClass('active');
 	}
+	
+	$('.navbar li:not(.active)').on('hover', function() {
+        $(this).toggleClass('active');
+	});
+	
 	$(document).ready(function() {
 		$('body').fadeIn();
 	});
