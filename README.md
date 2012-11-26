@@ -72,18 +72,15 @@ sau đó tạo một branch mới dựa trên branch gh-pages với tên đó:
 4. Khi cảm thấy ổn oy thì chuẩn bị push lên server:
   - Tải các thay đổi mới nhất của mọi người trên server:
         
-        `git pull`
-        
+        `git pull`      
   - Checkout branch gh-pages và merge những thay đổi vừa tạo:
   
             git checkout gh-pages
             git merge fix-footer
-        
   - Nếu có conflict thì resolve và commit
   - Push lên server:
   
         `git push`
-        
 5. Quay lại bước 2
 
 ### Cách resolve conflict:
