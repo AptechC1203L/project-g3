@@ -68,7 +68,7 @@ sau đó tạo một branch mới dựa trên branch gh-pages với tên đó:
 
     `git checkout -b fix-footer`
     
-3. Sửa code, viết code, test code trên branch vừa tạo
+3. Sửa code, viết code, test code và commit trên branch vừa tạo
 4. Khi cảm thấy ổn oy thì chuẩn bị push lên server:
   - Tải các thay đổi mới nhất của mọi người trên server:
         
