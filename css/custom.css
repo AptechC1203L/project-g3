@@ -8,12 +8,16 @@
 li {
 	list-style: none; 
 }
+
+
 a {	
-	-webkit-transition: all .5s linear;
-	-moz-transition: all .5s linear;
-	-o-transition: all .5s linear;
-	transition: all .5s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear;
 }
+
+
 .container {
 	padding: 20px 50px;
 	border-right: 1px solid #DDD;
