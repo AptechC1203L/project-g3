@@ -1,0 +1,4 @@
+auto : true
+url : http://lewtds.github.com/project-g3
+baseurl : /project-g3
+permalink : /blog/:year/:month/:day/:title
