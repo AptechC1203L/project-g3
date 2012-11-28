@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
     <title>{{ page.title }}</title>
@@ -14,12 +14,12 @@
 		  <div class="navbar-inner">
 			<a class="brand" href="#">Apple</a>
 			<ul class="nav">
-			  <li class="home active"><a href="{{ site.baseurl }}/">Home</a></li>
+			  <li class="home"><a href="{{ site.baseurl }}/">Home</a></li>
 			  <li class="contact"><a href="{{ site.baseurl }}/contact">Contact</a></li>
 			  <li class="blog"><a href="{{ site.baseurl }}/blog">Blog</a></li>
 			  <li><a href="#">About</a></li>
-			  <li><a href="{{ site.baseurl }}/FAQ">FAQ</a></li>
-			</ul>
+			  <li class="FAQ"><a href="{{ site.baseurl }}/FAQ">FAQ</a></li>
+
 		  </div>
 		</div>			
       </header>
@@ -81,23 +81,40 @@
 		interval: 10000
 	});
 	
+	//Click vào link ko nhảy về đầu trang
 	$('a[href="#"]').on('click', function(e) {
 		e.preventDefault();
 	});
-	var regex = /\/blog\//;
-	if(regex.test(location.href)) {
-		$('li.home').removeClass('active');
-		$('li.blog').addClass('active');
+	
+	//Tự động add class active cho menu khi ở các trang khác nhau
+	var path_name = location.pathname;
+	
+	var page = path_name.split("/")[2];
+	
+	switch(page) {
+		case 'blog':
+            $('li.blog').addClass('active');
+            break;
+        case 'contact':
+            $('li.contact').addClass('active');
+            break;
+        case 'FAQ':
+            $('li.FAQ').addClass('active');
+            break;
+        default:
+            $('li.home').addClass('active');
+            break;
 	}
 	
+	//Hiệu ứng hover nav menu
 	$('.navbar li:not(.active)').on('hover', function() {
         $(this).toggleClass('active');
 	});
 	
+	//Fade in toàn trang
 	$(document).ready(function() {
 		$('body').fadeIn();
 	});
-	//alert(location.href);
 	</script>
     
     <script type="text/javascript">
