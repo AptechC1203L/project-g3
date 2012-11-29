@@ -1,13 +1,10 @@
 ---
 layout: default
-title: Blog
-description: Our blog on iPhone 6
+title: Blog Archive
+description: Every blog post on our page.
 ---
 
-<div class="row">
-
-<div class="span7">
-{% for post in site.posts limit: 3 %}
+{% for post in site.posts %}
     <hr>
     <article class="center-text">
         <section>
@@ -22,23 +19,8 @@ description: Our blog on iPhone 6
           {% endunless %}
           </small></i>
           </p>
-          {{ post.content }}
+          {{ post.description }}
     	</section>
     </article>
 
 {% endfor %}
-</div>
-<hr>
-<div class="span4 offset1">
-    <h6>Recent posts</h6>
-    {% for post in site.posts limit: 10 %}
-    <p>
-    <h5><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h5>
-    <small class="muted">{{ post.date | date_to_string }}</small>
-    </p>
-    {% endfor %}
-    <hr>
-    <h5><a href="{{ site.baseurl }}/blog/archive/"/>Archive</a></h5>
-    
-</div>
-</div>
