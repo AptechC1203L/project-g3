@@ -49,6 +49,7 @@ a:hover {
 
 footer {
 	padding-top: 20px;
+	clear: both;
 }
 footer .row .inner {
 	width: 880px;
