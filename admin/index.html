@@ -3,27 +3,111 @@ layout: admin_default
 title: "Admin Panel"
 description: "Apple Admin CP"
 ---
-<div class="span4 offset2">
-	<form class="form-horizontal">
-	  <div class="control-group">
-		<label class="control-label" for="inputUser">User</label>
-		<div class="controls">
-		  <input type="text" id="inputUser" placeholder="Username">
+<h3>{{page.title}}</h3>
+<ul class="nav nav-tabs" id="admin-tabs">
+  <li class="active"><a href="#customers" data-toggle="tab">Customers</a></li>
+  <li><a href="#feedbacks" data-toggle="tab">Feedbacks</a></li>
+  <li><a href="#promotion" data-toggle="tab">Promotion</a></li>
+  <li><a href="#settings" data-toggle="tab">Settings</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="customers">
+	<table class="table table-striped">
+		<tr class="info">
+			<th>#</th>
+			<th>Full Name</th>
+			<th>Address</th>
+			<th>Quantity</th>
+			<th>Order Date</th>
+			<th>Shipping Date</th>
+			<th></th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Ngo Trung</td>
+			<td>Thi tran Trau Quy</td>
+			<td>-1</td>
+			<td>1/1/2011</td>
+			<td>1/2/2011</td>
+			<td>
+				<a href="#"><i class="icon-edit"></i></a>
+				<a href="#"><i class="icon-remove-sign"></i></a>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Ly Thanh</td>
+			<td>Thi tran Trau Quy</td>
+			<td>-1</td>
+			<td>1/1/2011</td>
+			<td>1/2/2011</td>
+			<td>
+				<a href="#"><i class="icon-edit"></i></a>
+				<a href="#"><i class="icon-remove-sign"></i></a>
+			</td>
+		</tr>
+	</table>
+  </div>
+  <div class="tab-pane" id="feedbacks">
+	<table class="table table-striped">
+		<tr>
+			<th>#</th>
+			<th>Customer's Name</th>
+			<th>Feedback content</th>
+			<th></th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Dinh Hung</td>
+			<td>Very good!</td>
+			<td>
+				<a href="#"><i class="icon-edit"></i></a>
+				<a href="#"><i class="icon-remove-sign"></i></a>
+			</td>
+		</tr>
+	</table>
+  </div>
+  <div class="tab-pane" id="promotion">
+	<table class="table table-striped">
+		<tr>
+			<th>#</th>
+			<th>Title</th>
+			<th>Date</th>
+			<th>Content</th>
+			<th></th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Noel Deal</td>
+			<td>1/1/2011</td>
+			<td>15% Off</td>
+			<td>
+				<a href="#"><i class="icon-edit"></i></a>
+				<a href="#"><i class="icon-remove-sign"></i></a>
+			</td>
+		</tr>
+	</table>
+  </div>
+  <div class="tab-pane" id="settings">
+	<div class="row">
+		<div class="span5">
+			<label>
+				In construction <input type="checkbox"/>
+			</label>
+			<label>Theme</label>
+			<select>
+			  <option>Dark</option>
+			  <option>Light</option>
+			</select>
 		</div>
-	  </div>
-	  <div class="control-group">
-		<label class="control-label" for="inputPassword">Password</label>
-		<div class="controls">
-		  <input type="password" id="inputPassword" placeholder="Password">
+		<div class="span5">
+			<label>
+				Enable Promotion <input type="checkbox"/>
+			</label>
 		</div>
-	  </div>
-	  <div class="control-group">
-		<div class="controls">
-		  <label class="checkbox">
-			<input type="checkbox"> Remember me
-		  </label>
-		  <button type="submit" class="btn">Sign in</button>
-		</div>
-	  </div>
-	</form>
+	</div>
+	<div class="row buttons">
+		<button class="btn btn-primary">Save</button>
+	</div>
+  </div>
 </div>

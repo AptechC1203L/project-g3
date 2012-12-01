@@ -9,7 +9,9 @@ li {
 	list-style: none; 
 }
 
-
+.center {
+	text-align: center;
+}
 a {	
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear;
@@ -339,4 +341,15 @@ img.flushleft {
 	font-size: 0.85em;
 	padding-left: 10px;
 	
+}
+
+/*Admin Log in*/
+h4.center {
+	line-height: 40px;
+}
+label {
+	vertical-align: bottom;
+}
+div.buttons {
+	text-align: center;
 }
