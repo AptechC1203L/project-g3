@@ -3,11 +3,6 @@
 	font-size: 14px;
 	background-color: #EEE;
 }
-/*Xóa dấu ở list */
-
-li {
-	list-style: none; 
-}
 
 .center {
 	text-align: center;
