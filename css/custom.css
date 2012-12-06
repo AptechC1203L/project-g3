@@ -7,13 +7,12 @@
 .center {
 	text-align: center;
 }
-a {	
+a {
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear;
 	-o-transition: all .3s linear;
 	transition: all .3s linear;
 }
-
 
 .container {
 	padding: 20px 50px;
@@ -220,6 +219,10 @@ footer .row ul {
 }
 #product-type a {
 	color: #333;
+}
+
+#product-type ins {
+    text-decoration: none;
 }
 
 /* Feature #1 */
