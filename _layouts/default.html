@@ -27,7 +27,7 @@
 			  <li class="home"><a href="{{ site.baseurl }}/">Home</a></li>
 			  <li class="contact"><a href="{{ site.baseurl }}/contact">Contact</a></li>
 			  <li class="blog"><a href="{{ site.baseurl }}/blog">Blog</a></li>
-			  <li><a href="#">About</a></li>
+			  <li class="about"><a href="{{site.baseurl}}/about">About</a></li>
 			  <li class="FAQ"><a href="{{ site.baseurl }}/faq">FAQ</a></li>
 
 
@@ -113,6 +113,9 @@
         case 'faq':
             $('li.FAQ').addClass('active');
             break;
+        case 'about':
+			$('li.about').addClass('active');
+			break;
         default:
             $('li.home').addClass('active');
             break;
