@@ -7,6 +7,8 @@ description: Our blog on iPhone 6
 <div class="row">
 
 <div class="span7">
+
+<!-- Lặp để lấy 3 post gần đây nhất -->
 {% for post in site.posts limit: 3 %}
     <hr>
     <article class="center-text">
@@ -25,12 +27,19 @@ description: Our blog on iPhone 6
           {{ post.content }}
     	</section>
     </article>
-
 {% endfor %}
+
+    <!-- Phân trang -->
+    <ul class="pager">
+        <li class="previous"><a href="#">Older</a></li>
+        <li class="next disabled"><a href="#">Newer</a></li>
+    </ul>
+
 </div>
 <hr>
 <div class="span4 offset1">
     <h6>Recent posts</h6>
+    <!-- Tóm tắt 10 post gần đây nhất -->
     {% for post in site.posts limit: 10 %}
     <p>
     <h5><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h5>
