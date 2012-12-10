@@ -417,3 +417,8 @@ h2.topbar a {
 span.button {
     padding: 0px 20px;
 }
+
+/* Blog editor */
+#epiceditor {
+	border: 1px solid;
+}

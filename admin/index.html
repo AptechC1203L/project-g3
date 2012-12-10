@@ -247,6 +247,8 @@ description: "Apple Admin CP"
             </td>
         </tr>
       </table>
+      <div id="epiceditor"></div>
+      <button onclick="load_editor();">New post</button>
     </div>
     
   <div class="tab-pane" id="settings">
@@ -267,3 +269,16 @@ description: "Apple Admin CP"
 	</div>
   </div>
 </div>
+
+<script type="text/javascript" src="{{ site.baseurl }}/js/epiceditor.min.js"></script>
+<script type="text/javascript">
+    function load_editor() {
+        var opts = {
+            basePath: "{{ site.baseurl }}/epiceditor/",
+            theme: {
+                editor: "themes/editor/epic-light.css"
+            }
+        };
+        var editor = new EpicEditor(opts).load();
+    }
+</script>
