@@ -131,16 +131,6 @@
 		$('body').fadeIn();
 	});
 	
-	//Kéo dài trang
-	var h =  parseInt(window.innerHeight);
-	var hBody = parseInt($("body").css("height").split("px")[0]);	
-	var hFooter = 140;
-	var hMin = (h-2*hFooter)+"px"; 	
-	//alert(h+" "+hBody+ " " +hFooter);
-	if(hBody < h) {
-		//alert("true");
-		$("article").css("height", hMin);
-	}
 	
 	$(".capacity").on("click", function() {
 		$("#cart").fadeIn("slow");

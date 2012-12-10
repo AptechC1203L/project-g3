@@ -400,7 +400,7 @@ h2.topbar a {
 	left: 50%;
 	background: #FFF;
 	padding: 30px;
-	line-heigt: 30px;
+	line-height: 30px;
 	border: 3px solid #DDD;
 	border-radius: 3px;
 }
@@ -412,4 +412,8 @@ h2.topbar a {
 }
 .specs-tables td.ttl {
 	width: 200px;
+}
+
+span.button {
+    padding: 0px 20px;
 }
