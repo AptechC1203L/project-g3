@@ -419,6 +419,12 @@ span.button {
 }
 
 /* Blog editor */
-#epiceditor {
-	border: 1px solid;
+.epiceditor {
+	box-shadow: rgba(0, 0, 0, 0.75) 0 0px 5px;
+	/*border: 1px solid;*/
+	border-radius: 3px;
+	/*padding: 5px;*/
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
 }

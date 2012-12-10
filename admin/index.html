@@ -248,7 +248,7 @@ description: "Apple Admin CP"
         </tr>
       </table>
       <div id="epiceditor"></div>
-      <button onclick="load_editor();">New post</button>
+      <div class="buttons"><button onclick="load_editor();" class="">New post</button></div>
     </div>
     
   <div class="tab-pane" id="settings">
@@ -280,5 +280,6 @@ description: "Apple Admin CP"
             }
         };
         var editor = new EpicEditor(opts).load();
+        $("#epiceditor").addClass("epiceditor")
     }
 </script>
