@@ -61,6 +61,16 @@ footer .row ul {
 	margin: 0;
 	font-size: 0.8em;
 }
+#footer-separator {
+    height: 3px;
+    color: #EEE;
+    border: 1px solid #BBB;
+}
+footer .footer-separator {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Chỉnh sửa lại 2 cái arrow */
 .carousel-control {
 	top: 50%;
@@ -428,4 +438,10 @@ span.button {
 	box-shadow: rgba(0, 0, 0, 0.3) 0 0px 15px;
 	border: 1px solid #888;
 	margin: 15px auto;
+}
+#support-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
 }
