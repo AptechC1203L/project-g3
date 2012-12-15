@@ -2,6 +2,7 @@
 layout: post
 title: Lorem ipsum
 description: Just a test page.
+published: true
 ---
 
 ## The standard Lorem Ipsum passage, used since the 1500s
