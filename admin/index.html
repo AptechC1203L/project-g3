@@ -14,7 +14,7 @@ description: "Apple Admin CP"
 </ul>
 <div class="tab-content">
   <div class="tab-pane active" id="customers">
-	<table class="table table-striped">
+	<table class="table table-striped tablesorter" id="order-table">
 		<tr class="info">
 			<th>#</th>
 			<th>Full Name</th>
@@ -32,6 +32,10 @@ description: "Apple Admin CP"
 			<td>1/1/2011</td>
 			<td>1/2/2011</td>
 			<td>
+                <select>
+                    <option>Chờ duyệt</option>
+                    <option>Đang chuyển</option>
+                </select>
 				<a href="#"><i class="icon-edit"></i></a>
 				<a href="#"><i class="icon-remove-sign"></i></a>
 			</td>
@@ -44,6 +48,10 @@ description: "Apple Admin CP"
 			<td>1/1/2011</td>
 			<td>1/2/2011</td>
 			<td>
+                <select>
+                    <option>Chờ duyệt</option>
+                    <option>Đang chuyển</option>
+                </select>
 				<a href="#"><i class="icon-edit"></i></a>
 				<a href="#"><i class="icon-remove-sign"></i></a>
 			</td>
@@ -56,6 +64,16 @@ description: "Apple Admin CP"
             <span class="button"><button class="btn btn-success">&nbsp;</button>Delivered</span>
             <span class="button"><button class="btn btn-danger">&nbsp;</button>Canceled</span>
         </div>
+    </div>
+    <div class="pagination center">
+      <ul>
+        <li><a href="#">Prev</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">Next</a></li>
+      </ul>
     </div>
   </div>
   <div class="tab-pane" id="feedbacks">
@@ -282,4 +300,6 @@ description: "Apple Admin CP"
         var editor = new EpicEditor(opts).load();
         $("#epiceditor").addClass("epiceditor")
     }
+    
+    
 </script>

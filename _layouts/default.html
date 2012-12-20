@@ -25,7 +25,7 @@
 			<ul class="nav">
 
 			  <li class="home"><a href="{{ site.baseurl }}/">Home</a></li>
-			  <li class="Store"><a href="{{ site.baseurl }}/store">Store</a></li>
+			  <li class="store"><a href="{{ site.baseurl }}/store">Store</a></li>
 			  <li class="contact"><a href="{{ site.baseurl }}/contact">Contact</a></li>
 			  <li class="blog"><a href="{{ site.baseurl }}/blog">Blog</a></li>
 			  <li class="about"><a href="{{site.baseurl}}/about">About</a></li>
@@ -99,6 +99,7 @@
     <!-- Scripts -->
     <script src="{{ site.baseurl }}/js/jquery.js"></script>
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/js/jquery.tablesorter.min.js"></script>
 	<script type="text/javascript">
 	$('.carousel').carousel({
 		interval: 10000
@@ -127,6 +128,9 @@
         case 'about':
 			$('li.about').addClass('active');
 			break;
+        case 'store':
+            $('li.store').addClass('active');
+            break;
         default:
             $('li.home').addClass('active');
             break;
@@ -162,6 +166,9 @@
             s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
             (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
+        $(document).ready(function() {
+            $('#order-table').tablesorter();    
+        });
     </script>
     
   </body>

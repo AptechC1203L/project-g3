@@ -445,3 +445,6 @@ span.button {
     right: 0;
     padding: 10px;
 }
+select, option {
+    font: inherit;
+}
