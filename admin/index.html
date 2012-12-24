@@ -23,6 +23,7 @@ description: "Apple Admin CP"
 			<th>Order Date</th>
 			<th>Shipping Date</th>
 			<th></th>
+            <th></th>
 		</tr>
 		<tr class="success">
 			<td>1</td>
@@ -33,12 +34,17 @@ description: "Apple Admin CP"
 			<td>1/2/2011</td>
 			<td>
                 <select>
-                    <option>Chờ duyệt</option>
-                    <option>Đang chuyển</option>
+                    <option selected="selected">Processing</option>
+                    <option>Shipping</option>
+                    <option>Delivered</option>
+                    <option>Canceled</option>
                 </select>
 				<a href="#"><i class="icon-edit"></i></a>
 				<a href="#"><i class="icon-remove-sign"></i></a>
 			</td>
+            <td>
+                <span class="inline-block shipping"></span>
+            </td>
 		</tr>
 		<tr class="warning">
 			<td>2</td>
@@ -49,20 +55,25 @@ description: "Apple Admin CP"
 			<td>1/2/2011</td>
 			<td>
                 <select>
-                    <option>Chờ duyệt</option>
-                    <option>Đang chuyển</option>
+                    <option>Processing</option>
+                    <option>Shipping</option>
+                    <option>Delivered</option>
+                    <option selected="selected">Canceled</option>
                 </select>
 				<a href="#"><i class="icon-edit"></i></a>
 				<a href="#"><i class="icon-remove-sign"></i></a>
 			</td>
+            <td>
+                <span class="inline-block canceled"></span>
+            </td>
 		</tr>
 	</table>
     <div class="row buttons">        
         <div>
-            <span class="button"><button class="btn btn-warning">&nbsp;</button>Processing</span>
-            <span class="button"><button class="btn btn-info">&nbsp;</button>Shipping</span>
-            <span class="button"><button class="btn btn-success">&nbsp;</button>Delivered</span>
-            <span class="button"><button class="btn btn-danger">&nbsp;</button>Canceled</span>
+            <span class="button"><button class="btn btn-warning status">&nbsp;</button>Processing</span>
+            <span class="button"><button class="btn btn-info status">&nbsp;</button>Shipping</span>
+            <span class="button"><button class="btn btn-success status">&nbsp;</button>Delivered</span>
+            <span class="button"><button class="btn btn-danger status">&nbsp;</button>Canceled</span>
         </div>
     </div>
     <div class="pagination center">

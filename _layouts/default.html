@@ -170,6 +170,14 @@
             $('#order-table').tablesorter();    
         });
     </script>
+    <script type="text/javascript">
+    $('.icon-remove-sign').on('click', function() {
+        var r = confirm('Do you really want to delete?');
+        if(r==true) {
+            $(this).parent().parent().parent().remove();
+        }
+    });
+    </script>
     
   </body>
 </html>
